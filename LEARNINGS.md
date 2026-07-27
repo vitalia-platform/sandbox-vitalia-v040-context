@@ -1,6 +1,4 @@
-<!-- LEARNINGS.md | Atualizado em: 24-07-2026 13:53:05(GMT-04:00) -->
+# Aprendizados
 
-# Aprendizados da Sessão
-
-- **[KIT]** O script `vitalia_context_engine.py` reside em `~/.vitalia/kit/scripts/vitalia_context_engine.py` caso o repositório local não possua o diretório `scripts/` clonado.
-- **[PROJETO]** A estrutura `.vitalia/memory/session/` está configurada e funcional no repositório local.
+- [PROJETO] A documentação técnica estava excessivamente focada em infraestrutura bruta (Redis, GPUs) e desconectada do valor de negócio (SDD e Medical Gates). A reestruturação por persona e a divisão em módulos (Básico, Intermediário, Avançado) resolveu esse débito técnico.
+- [KIT] O uso do comando `/vitalia-brainstorming` (protocolo socrático) foi essencial para apresentar as opções de arquitetura da documentação (Prós e Contras) antes de aplicar qualquer alteração real, evitando retrabalho.

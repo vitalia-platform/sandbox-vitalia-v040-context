@@ -1,17 +1,14 @@
-<!-- README.md | Atualizado em: 24-07-2026 13:54:24(GMT-04:00) -->
+# 🌐 Vitalia Context Dashboard
 
-# Dashboard de Contexto: sandbox-vitalia-v040
+## 📊 Estado da Sessão Atual
+**Tarefa:** Criação do Mini-Curso SDD e reestruturação da documentação.
+**Status:** Concluído
+**Próximo Passo (P0):** Iniciar a execução prática dos exercícios SDD (Katas), começando pela Unidade 1, para validar na prática a teoria descrita no Onboarding.
 
-## Shards Ativos
+## 🧠 Aprendizados e Decisões
+- Reorganizamos a documentação do projeto como um "Mini-Curso" focado em SDD (Spec-Driven Development), separando claramente o conteúdo por personas e graus de proficiência (Básico, Intermediário, Avançado).
+- O pipeline E2E de validação foi extraído para ser a "Fonte da Verdade" no `docs/TESTING.md`.
+- A documentação técnica anterior focava muito em infraestrutura. A nova estrutura de módulos aproxima a teoria da prática de Katas interativos, o que resolve esse débito técnico.
 
-| Máquina | Tarefa Atual | Etapas | Status | Último Sync | Próximo Passo (P0) |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **local** (local) | Teste e validação dos fluxos de sessão | Unknown | Concluído | 24-07-2026 13:53:05 | Definir o escopo da primeira feature via `/vitalia-spec-specify` |
-
-## Arquitetura de Contexto
-
-```mermaid
-graph TD
-  Raiz["Repositório Raiz (sandbox-vitalia-v040)"]
-  local["Shard: local"] --> Raiz
-```
+## 🗂 Shards Ativos
+- **Shard: local** (Atualizado: 27-07-2026 17:43:00)

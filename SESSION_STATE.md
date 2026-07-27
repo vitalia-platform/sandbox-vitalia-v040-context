@@ -1,11 +1,11 @@
-<!-- SESSION_STATE.md | Atualizado em: 24-07-2026 13:53:05(GMT-04:00) -->
-
 # Estado da Sessão
-**Feature ativa:** Nenhuma
-**P0:** Definir o escopo da primeira feature via `/vitalia-spec-specify`
 
-**Últimas Atividades:**
-- Teste e validação dos fluxos /vitalia-session-start, /vitalia-session-end e /vitalia-session-consolidate.
+**Atividades recentes:**
+- Criação do Mini-Curso de SDD na pasta `docs/` (`ONBOARDING.md`, `ARCHITECTURE.md`, `EXERCICIOS-SDD.md`).
+- Isolamento do pipeline de infraestrutura no `TESTING.md`.
+- Refatoração do `README.md` para atuar como capa e índice do curso.
+- Conversão do antigo `Progresso.md` em um rastreador oficial de estado (`CHANGELOG.md`).
+- Exclusão de arquivos obsoletos e redundantes da raiz.
 
-**Arquivos em edição:**
-Nenhum
+## Próximo Passo (P0)
+- Iniciar a execução prática dos exercícios SDD (Katas), começando pela Unidade 1, para validar na prática a teoria descrita no Onboarding.
