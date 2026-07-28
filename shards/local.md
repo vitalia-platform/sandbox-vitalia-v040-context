@@ -1,6 +1,7 @@
 # Shard: local (local)
-**Último sync:** 2026-07-27 20:41:00
-**Tarefa:** Debugging e Especificação do Kill Switch e Symlinks globais
-**Status:** Concluído
+**Último sync:** 28-07-2026 11:26:20
+**Tarefa:** Aprovadas especificações formais Spec 002 (Redis Concurrency Lock) e Spec 003 (Vitalia Dashboard & Node Manager)
+**Status:** Concluído (Fase de Especificação)
+
 ## Próximo Passo (P0)
-- Reinstalar o kit globalmente (`install.sh`) e validar o comportamento do Kill Switch no projeto local (agente-local-v2).
+Iniciar planejamento de arquitetura de código (`/vitalia-spec-plan`) e geração de tarefas (`/vitalia-spec-tasks`) para as duas especificações aprovadas (Spec 002 e Spec 003).

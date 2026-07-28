@@ -1,4 +1,4 @@
-<!-- README.md | Atualizado em: 27-07-2026 20:41:22(GMT-04:00) -->
+<!-- README.md | Atualizado em: 28-07-2026 11:28:38(GMT-04:00) -->
 
 # Dashboard de Contexto: agente-local-v2
 
@@ -6,7 +6,7 @@
 
 | Máquina | Tarefa Atual | Etapas | Status | Último Sync | Próximo Passo (P0) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **local** (local) | Debugging e Especificação do Kill Switch e Symlinks globais | Unknown | Concluído | 2026-07-27 20:41:00 | - Reinstalar o kit globalmente (`install.sh`) e validar o comportamento do Kill Switch no projeto local (agente-local-v2). |
+| **local** (local) | Aprovadas especificações formais Spec 002 (Redis Concurrency Lock) e Spec 003 (Vitalia Dashboard & Node Manager) | Unknown | Concluído (Fase de Especificação) | 28-07-2026 11:26:20 | Iniciar planejamento de arquitetura de código (`/vitalia-spec-plan`) e geração de tarefas (`/vitalia-spec-tasks`) para as duas especificações aprovadas (Spec 002 e Spec 003). |
 
 ## Arquitetura de Contexto
 

@@ -1,10 +1,10 @@
 # Estado da Sessão
 
 **Atividades recentes:**
-- Debugging comportamental: Identificamos que o agente estava pulando o pipeline SDD ao tentar executar o planejamento através de ferramentas nativas da IDE.
-- Decisão Arquitetural: Concordamos em centralizar a regra restritiva (Kill Switch) estritamente no `architect-constitution.md` para evitar divergências, promovendo fricção como uma camada de segurança.
-- Especificação e Planejamento: Executamos rigorosamente o funil SDD (`/vitalia-spec-specify`, `/vitalia-spec-plan`, `/vitalia-spec-tasks`), isolando o escopo na pasta global do kit (`~/.vitalia/kit/specs/002-kit-sdd-enforcement`).
-- Implementação: Modificamos o `install-project.sh` para gerar os symlinks da estrutura do kit, encapsulamos os TOMLs com caminhos relativos `.vitalia/` e gravamos o Kill Switch na Constituição.
+- Leitura e assimilação do contexto histórico da reunião do AI Studio (`Máquina de estados REDIS`).
+- Especificação formal da **Spec 002** (Trava de Concorrência de 3 Estados com Redis Streams, cancelamento rápido via `asyncio.Task.cancel` e segurança HMAC com ACLs) em `specs/002-redis-concurrency-lock/spec.md` — Aprovada.
+- Análise da base legada em `/home/andre/projetos/assistidos/local-agent` (`telemetry_api.py` e `runner.py`).
+- Especificação formal e atualização da **Spec 003** em `specs/003-vitalia-dashboard-node-manager/spec.md` (Descoberta Dupla de Nós, Benchmark de LLMs Cold vs. Warm, Controle Remoto via HMAC, Inspeção de Conteúdo de Filas Redis e Tela Dedicada de Inventário de Nós e Recursos em Tempo Real) — Aprovada.
 
 ## Próximo Passo (P0)
-- Reinstalar o kit globalmente (`install.sh`) e validar o comportamento do Kill Switch no projeto local (agente-local-v2).
+- Iniciar o planejamento técnico de arquitetura (`/vitalia-spec-plan`) e a geração de tarefas (`/vitalia-spec-tasks`) para dar origem ao código de implementação das duas especificações aprovadas (Spec 002 e Spec 003).
