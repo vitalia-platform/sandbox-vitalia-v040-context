@@ -6,3 +6,5 @@
 - [KIT] Centralizar as restrições comportamentais na Constituição (`architect-constitution.md`) garante obediência universal, não importando a IDE ou orquestrador que consuma o Kit.
 - [KIT] O desacoplamento prévio do código focado estritamente na especificação via `/vitalia-brainstorming` provou-se altamente eficaz para validar resiliência de rede (WSL2 NAT) e restrições de hardware antes de qualquer geração de código.
 - [DASHBOARD] A separação entre Cold Load (carregamento de modelo na GPU) e Warm Inference em benchmarks de LLM é indispensável para diagnosticar gargalos de VRAM em nós híbridos (NVIDIA GTX 1060 vs MX450).
+- [PROJETO] O uso de `zombie_timer` (`asyncio.create_task`) que vigia a desconexão dos workers precisou de cancelamento explícito via código na hora de confirmar a posse do RED lock. Sem isso o loop vazava tarefas assíncronas dormindo nos nós (detectado e mitigado no Stress Test).
+- [PROJETO] Manipulação nativa do `fakeredis` e instâncias do `redis` assíncrono em Python exigiu tratamento assertivo de codificação entre `bytes` e `str` no trânsito das chaves e valores.

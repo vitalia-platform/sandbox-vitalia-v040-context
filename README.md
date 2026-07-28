@@ -1,4 +1,4 @@
-<!-- README.md | Atualizado em: 28-07-2026 11:28:38(GMT-04:00) -->
+<!-- README.md | Atualizado em: 28-07-2026 15:03:52(GMT-04:00) -->
 
 # Dashboard de Contexto: agente-local-v2
 
@@ -6,7 +6,7 @@
 
 | Máquina | Tarefa Atual | Etapas | Status | Último Sync | Próximo Passo (P0) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **local** (local) | Aprovadas especificações formais Spec 002 (Redis Concurrency Lock) e Spec 003 (Vitalia Dashboard & Node Manager) | Unknown | Concluído (Fase de Especificação) | 28-07-2026 11:26:20 | Iniciar planejamento de arquitetura de código (`/vitalia-spec-plan`) e geração de tarefas (`/vitalia-spec-tasks`) para as duas especificações aprovadas (Spec 002 e Spec 003). |
+| **local** (local) | Encerramento Spec 002 (Integração assíncrona, observability e demo pipeline) | Unknown | Concluído | 28-07-2026 15:01:40 | Iniciar os preparativos para o setup Multimáquinas (Nó 1 x Nó 2 físico) usando a engine de lock recém construída, ou partir para a implementação da próxima SPEC (`003`) da arquitetura. |
 
 ## Arquitetura de Contexto
 
