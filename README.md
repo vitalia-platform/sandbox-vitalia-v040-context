@@ -1,4 +1,4 @@
-<!-- README.md | Atualizado em: 28-07-2026 15:03:52(GMT-04:00) -->
+<!-- README.md | Atualizado em: 28-07-2026 16:33:08(GMT-04:00) -->
 
 # Dashboard de Contexto: agente-local-v2
 
@@ -6,7 +6,7 @@
 
 | Máquina | Tarefa Atual | Etapas | Status | Último Sync | Próximo Passo (P0) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **local** (local) | Encerramento Spec 002 (Integração assíncrona, observability e demo pipeline) | Unknown | Concluído | 28-07-2026 15:01:40 | Iniciar os preparativos para o setup Multimáquinas (Nó 1 x Nó 2 físico) usando a engine de lock recém construída, ou partir para a implementação da próxima SPEC (`003`) da arquitetura. |
+| **local** (local) | Validação do barramento distribuído (Redis) e resolução do erro de dependência legada do Autogen. | Unknown | Concluído | 28-07-2026 16:31:11 | Iniciar o desenvolvimento da SPEC 003 da arquitetura e dar início à refatoração do código legado do projeto para a nova arquitetura modular, visto que o barramento distribuído (Pub/Sub) já provou sua viabilidade. |
 
 ## Arquitetura de Contexto
 

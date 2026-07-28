@@ -1,11 +1,11 @@
 # Estado da Sessão
 
 **Atividades recentes:**
-- Implementação de `StreamPublisher` e `StreamConsumer` conectados ao Redis Streams.
-- Manipulação assíncrona das inferências do LLM e integração com `.cancel()` de Tasks no `asyncio` e ACKs em tempo real (`CANCEL_INTENT` -> `CANCELLED_PROMPT`).
-- Testes massivos de stress test, validando a segurança anti-leak do `zombie_timer` e monotonicidade do `UUID v7`.
-- Cobertura de testes atingida em **91%** global e documentação atualizada (`README.md`, `.env.example`).
-- Criação e validação do pipeline final em uma demonstração real-time (`run_demo.py`).
+- Planejamento e criação do pipeline de testes multimáquinas.
+- Investigação do erro de dependência provocado pelo conflito entre `autogenstudio` e `pyautogen`.
+- Rollback do `vitalia-core/requirements.txt` para restaurar a estabilidade do código original.
+- Criação de script Python customizado (`scripts/demo_multinode_redis.py`) para validar o barramento distribuído (Redis Streams + Ollama HTTPx) isoladamente.
+- Identificação da semântica de erro 404 do Ollama (Model not found) e melhoria no log.
 
 ## Próximo Passo (P0)
-- Iniciar os preparativos para o setup Multimáquinas (Nó 1 x Nó 2 físico) usando a engine de lock recém construída, ou partir para a implementação da próxima SPEC (`003`) da arquitetura.
+- Iniciar o desenvolvimento da SPEC 003 da arquitetura e dar início à refatoração do código legado do projeto para a nova arquitetura modular, visto que o barramento distribuído (Pub/Sub) já provou sua viabilidade.
