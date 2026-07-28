@@ -1,11 +1,10 @@
 # Estado da Sessão
 
 **Atividades recentes:**
-- Criação do Mini-Curso de SDD na pasta `docs/` (`ONBOARDING.md`, `ARCHITECTURE.md`, `EXERCICIOS-SDD.md`).
-- Isolamento do pipeline de infraestrutura no `TESTING.md`.
-- Refatoração do `README.md` para atuar como capa e índice do curso.
-- Conversão do antigo `Progresso.md` em um rastreador oficial de estado (`CHANGELOG.md`).
-- Exclusão de arquivos obsoletos e redundantes da raiz.
+- Debugging comportamental: Identificamos que o agente estava pulando o pipeline SDD ao tentar executar o planejamento através de ferramentas nativas da IDE.
+- Decisão Arquitetural: Concordamos em centralizar a regra restritiva (Kill Switch) estritamente no `architect-constitution.md` para evitar divergências, promovendo fricção como uma camada de segurança.
+- Especificação e Planejamento: Executamos rigorosamente o funil SDD (`/vitalia-spec-specify`, `/vitalia-spec-plan`, `/vitalia-spec-tasks`), isolando o escopo na pasta global do kit (`~/.vitalia/kit/specs/002-kit-sdd-enforcement`).
+- Implementação: Modificamos o `install-project.sh` para gerar os symlinks da estrutura do kit, encapsulamos os TOMLs com caminhos relativos `.vitalia/` e gravamos o Kill Switch na Constituição.
 
 ## Próximo Passo (P0)
-- Iniciar a execução prática dos exercícios SDD (Katas), começando pela Unidade 1, para validar na prática a teoria descrita no Onboarding.
+- Reinstalar o kit globalmente (`install.sh`) e validar o comportamento do Kill Switch no projeto local (agente-local-v2).
