@@ -1,11 +1,10 @@
 # Estado da Sessão
 
 **Atividades recentes:**
-- Planejamento e criação do pipeline de testes multimáquinas.
-- Investigação do erro de dependência provocado pelo conflito entre `autogenstudio` e `pyautogen`.
-- Rollback do `vitalia-core/requirements.txt` para restaurar a estabilidade do código original.
-- Criação de script Python customizado (`scripts/demo_multinode_redis.py`) para validar o barramento distribuído (Redis Streams + Ollama HTTPx) isoladamente.
-- Identificação da semântica de erro 404 do Ollama (Model not found) e melhoria no log.
+- Refatoração Estrutural (Fase 8 SDD) concluída: Expurgado o prefixo `src.` e as gambiarras de `sys.path`.
+- Correção de Mocks e Testes: Testes `pytest` atualizados para refletir o Src Layout e passar com 100% de sucesso.
+- Correção do ambiente de Dashboard (Fase 9 SDD): Renomeada a variável de segurança de `DASHBOARD_SECRET_KEY` para a preferida `DASHBOARD_API_KEY`.
+- Atualização da Documentação: Corrigida a chamada de inicialização do Uvicorn nativo com a flag `--app-dir src`.
 
 ## Próximo Passo (P0)
-- Iniciar o desenvolvimento da SPEC 003 da arquitetura e dar início à refatoração do código legado do projeto para a nova arquitetura modular, visto que o barramento distribuído (Pub/Sub) já provou sua viabilidade.
+- Iniciar o desenvolvimento das features do Dashboard Web (Visão Geral de Nós e Sistema) conforme as Histórias de Usuário pendentes na Especificação.

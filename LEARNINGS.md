@@ -11,3 +11,5 @@
 - [PROJETO] A versão 0.4+ do Microsoft AutoGen fragmentou a arquitetura em `autogen-core` e `autogen-ext`, quebrando a compatibilidade retroativa com a UI legada `autogenstudio`. Foi necessário adotar scripts puros para validar infraestrutura sem fricção e isolar a biblioteca legada para futura refatoração.
 - [PROJETO] O motor Ollama retorna HTTP 404 (Not Found) no endpoint `/api/generate` quando o modelo especificado não está presente localmente na máquina servidora, o que exige um tratamento de erro mais claro do que um genérico falha de endpoint.
 - [KIT] Para testar hipóteses de infraestrutura, usar scripts minimalistas nativos (ex: httpx, redis) é mais confiável e à prova de "dependency hell" do que carregar todo o contexto da aplicação.
+- [KIT] O Uvicorn ignora a diretiva `pythonpath` do `pyproject.toml`, sendo obrigatória a flag `--app-dir src` no `README` ao utilizar "Src Layout" em projetos FastAPI não instalados globalmente.
+- [PROJETO] Modificações arquiteturais na estrutura de arquivos exigem correções duplas nos testes, especialmente ao aplicar mocks (`@patch`) em caminhos de importação.

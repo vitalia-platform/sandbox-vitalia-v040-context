@@ -1,6 +1,7 @@
 # Shard: local (local)
-**Último sync:** 28-07-2026 16:31:11
-**Tarefa:** Validação do barramento distribuído (Redis) e resolução do erro de dependência legada do Autogen.
+**Último sync:** 29-07-2026 10:07:54
+**Tarefa:** Refatoração Estrutural e Correção do Uvicorn / Pytest (Fases 8 e 9 SDD).
 **Status:** Concluído
+
 ## Próximo Passo (P0)
-Iniciar o desenvolvimento da SPEC 003 da arquitetura e dar início à refatoração do código legado do projeto para a nova arquitetura modular, visto que o barramento distribuído (Pub/Sub) já provou sua viabilidade.
+Iniciar o desenvolvimento das features do Dashboard Web (Visão Geral de Nós e Sistema) conforme as Histórias de Usuário pendentes na Especificação.
