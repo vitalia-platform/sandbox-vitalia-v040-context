@@ -1,4 +1,4 @@
-<!-- README.md | Atualizado em: 29-07-2026 10:09:21(GMT-04:00) -->
+<!-- README.md | Atualizado em: 30-07-2026 15:29:26(GMT-04:00) -->
 
 # Dashboard de Contexto: agente-local-v2
 
@@ -6,7 +6,7 @@
 
 | Máquina | Tarefa Atual | Etapas | Status | Último Sync | Próximo Passo (P0) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **local** (local) | Refatoração Estrutural e Correção do Uvicorn / Pytest (Fases 8 e 9 SDD). | Unknown | Concluído | 29-07-2026 10:07:54 | Iniciar o desenvolvimento das features do Dashboard Web (Visão Geral de Nós e Sistema) conforme as Histórias de Usuário pendentes na Especificação. |
+| **local** (local) | SPEC-004 Tasks and IMPL_GUARD_RAILS creation | Unknown | Concluído | 30-07-2026 15:27:00 | - Iniciar a execução do `/vitalia-spec-implement` da SPEC-004 (Context Refactor) com o Gemini 3.1 Pro, seguindo as guidelines do `IMPL_GUARD_RAILS.md`. |
 
 ## Arquitetura de Contexto
 

@@ -13,3 +13,5 @@
 - [KIT] Para testar hipóteses de infraestrutura, usar scripts minimalistas nativos (ex: httpx, redis) é mais confiável e à prova de "dependency hell" do que carregar todo o contexto da aplicação.
 - [KIT] O Uvicorn ignora a diretiva `pythonpath` do `pyproject.toml`, sendo obrigatória a flag `--app-dir src` no `README` ao utilizar "Src Layout" em projetos FastAPI não instalados globalmente.
 - [PROJETO] Modificações arquiteturais na estrutura de arquivos exigem correções duplas nos testes, especialmente ao aplicar mocks (`@patch`) em caminhos de importação.
+- [KIT] A prevenção de uso de conhecimento interno em LLMs avançados requer o uso de controles determinísticos de API (ex: `dynamic_threshold`, `tool_config="ANY"`), pois prompts textuais ("soft") sofrem drift contra o viés de confiança do treinamento do modelo.
+- [PROJETO] A introdução de uma "Phase 0" obrigatória em `tasks.md` é um gate eficaz para impedir a execução acidental de comandos globais (como `python` ou `pip`) fora do ambiente virtual.
