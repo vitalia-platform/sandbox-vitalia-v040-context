@@ -1,0 +1,7 @@
+machine: Server A
+machine_id: srv-A
+last_sync: 30-07-2026 12:00:00(GMT-04:00)
+task: Testing sync
+steps: Test step 1
+status: Concluído
+p0: Do next thing
