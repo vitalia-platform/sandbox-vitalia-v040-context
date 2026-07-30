@@ -1,4 +1,4 @@
-<!-- LEARNINGS.md | Atualizado em: 30-07-2026 16:27:58(GMT-04:00) -->
+<!-- LEARNINGS.md | Atualizado em: 30-07-2026 16:41:59(GMT-04:00) -->
 
 # Aprendizados da Sessão
 
@@ -13,3 +13,6 @@
 - [PROJETO] A versão 0.4+ do Microsoft AutoGen fragmentou a arquitetura em `autogen-core` e `autogen-ext`, quebrando a compatibilidade retroativa com a UI legada `autogenstudio`. Foi necessário adotar scripts puros para validar infraestrutura sem fricção e isolar a biblioteca legada para futura refatoração. `[pre-migration]`
 - [PROJETO] O motor Ollama retorna HTTP 404 (Not Found) no endpoint `/api/generate` quando o modelo especificado não está presente localmente na máquina servidora, o que exige um tratamento de erro mais claro do que um genérico falha de endpoint. `[pre-migration]`
 - [KIT] Para testar hipóteses de infraestrutura, usar scripts minimalistas nativos (ex: httpx, redis) é mais confiável e à prova de "dependency hell" do que carregar todo o contexto da aplicação. `[pre-migration]`
+- [PROJETO] O uso de JSONL provou ser o design perfeito para merges de Git em concorrência, enquanto a renderização dinâmica resolve a apresentação. Foi necessário atentar para a deduplicação de chaves (IDs). `[fc2313ad]`
+- [KIT] O workflow impôs limites ao Agente usando o BASH apenas para fazer append de itens ou invocar os comandos do Motor (Idempotência), eliminando os riscos de alucinações e perda de histórico no Markdown. `[fc2313ad]`
+- [PROJETO] Comandos de rede no shell (como git push/pull) são gargalos silenciosos de travamento sem credentials apropriadas (SSH) e forçaram a melhoria dos prompts para abraçar o "HITL" (Human-In-The-Loop) delegando a solução de conflitos de git pro desenvolvedor. `[fc2313ad]`

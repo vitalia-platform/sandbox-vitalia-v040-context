@@ -1,0 +1,7 @@
+machine: SERVIDO
+machine_id: fc2313ad
+last_sync: 30-07-2026 16:40:22(GMT-04:00)
+task: Implementação da Spec-004 (Context Refactor 3-Tier)
+steps: Setup de 3-Tier Multi-Machine e Lock em JSONL; Migração do Histórico; Testes de concorrência e finalização do workflow.
+status: Concluído
+p0: Iniciar a próxima Feature (ex: Spec-005) já alavancando a infraestrutura de Sincronização em Nuvem (ou definir o próximo grande épico do Agente Local).
