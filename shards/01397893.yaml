@@ -1,0 +1,7 @@
+machine: SERVIDO
+machine_id: 01397893
+last_sync: 31-07-2026 09:18:00(GMT-04:00)
+task: 005-dashboard-spa
+steps: Refatoração completa da arquitetura do Dashboard para uma SPA (React + Vite + TypeScript) via pipeline SDD; Preenchimento de lacunas (gaps) no Backend FastAPI; Implementação de Design System "UI UX Pro Max"; Criação e integração das telas Telemetry HUD, Node Inventory, Queue Inspector e Settings; Build do frontend para a pasta estática do backend (vitalia-core/static); Empacotamento de uma versão portátil em vitalia-release/; Instrução técnica de reset de histórico para o repositório de contexto na nova máquina.
+status: Concluído
+p0: Realizar o setup, deploy e os testes interativos da pasta vitalia-release na nova máquina.
